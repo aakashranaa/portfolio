@@ -35,11 +35,21 @@
   }
 }
 
+
 /* Custom animations */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0) translateX(0) rotate(0);
+  }
+  33% {
+    transform: translateY(-50px) translateX(20px) rotate(10deg);
+  }
+  66% {
+    transform: translateY(20px) translateX(-20px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(0);
+  }
 }
 
 .animate-float {

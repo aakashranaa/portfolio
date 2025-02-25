@@ -56,7 +56,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -207,7 +207,7 @@ const ContactForm = () => {
           </motion.form>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
