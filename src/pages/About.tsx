@@ -44,7 +44,7 @@ const About = () => {
   const [activeProject, setActiveProject] = useState('Autonomize AI');
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-6 py-24">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-6 py-24">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -328,7 +328,7 @@ const About = () => {
 
         {/* Skills Section */}
         {/* Skills Section - Enhanced Version */}
-<section className="py-20 relative">
+<div className="py-20 relative">
   {/* Background elements */}
   <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-70 z-0"></div>
   
@@ -440,11 +440,11 @@ const About = () => {
       ))}
     </div>
   </div>
-</section>
+</div>
 
 
       </motion.div>
-    </section>
+    </div>
   );
 };
 

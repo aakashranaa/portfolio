@@ -15,25 +15,25 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <section id="hero" className="min-h-screen">
+        <div id="hero" className="min-h-screen">
           <Hero />
-        </section>
+        </div>
         
-        <section id="about" className="min-h-screen py-20">
+        <div id="about" className="min-h-screen">
           <About />
-        </section>
+        </div>
         
-        <section id="projects" className="min-h-screen py-20">
+        <div id="projects" className="min-h-screen">
           <Projects />
-        </section>
+        </div>
         
-        <section id="bucket-list" className="min-h-screen py-20">
+        <div id="bucket-list" className="min-h-screen">
           <BucketList />
-        </section>
+        </div>
         
-        <section id="contact" className="min-h-screen py-20">
+        <div id="contact" className="min-h-screen">
           <Contact />
-        </section>
+        </div>
       </motion.div>
     </>
   );

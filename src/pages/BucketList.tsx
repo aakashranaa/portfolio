@@ -45,7 +45,7 @@ const bucketList = [
     icon: Droplet,
     year: 2025,
     status: "Target",
-    description: "California trip planned"
+    description: "Mulki trip in plans"
   },
   { 
     title: "Skateboarding", 
@@ -107,7 +107,7 @@ const bucketList = [
     title: "Visit All the 8 Wonders", 
     completed: false, 
     icon: Globe2,
-    year: 2025,
+    year: 2030,
     status: "1/8",
     description: "Taj Mahal visited"
   },
@@ -213,7 +213,7 @@ const BucketListItem = ({ item }: any) => {
   const [isHovered, setIsHovered] = useState(false);
   
   return (
-    <section 
+    <div 
       className={`
         relative overflow-hidden
         bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6
@@ -303,7 +303,7 @@ const BucketListItem = ({ item }: any) => {
                 : 'from-blue-400/40 to-transparent'
         }
       `} />
-    </section>
+    </div>
   );
 };
 

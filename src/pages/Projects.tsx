@@ -87,7 +87,7 @@ const ProjectCard = ({ project }: any) => {
   const TypeIcon = projectTypeIcons[project.type] || <Code className="w-5 h-5" />;
 
   return (
-    <section 
+    <div 
       className={`
         group relative bg-gradient-to-br from-gray-800/80 via-gray-800/70 to-gray-900/90
         backdrop-blur-lg rounded-xl overflow-hidden
@@ -217,7 +217,7 @@ const ProjectCard = ({ project }: any) => {
         absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 transition-all duration-700 ease-out
         ${isHovered ? 'w-full' : 'w-0'}
       `}></div>
-    </section>
+    </div>
   );
 };
 
@@ -227,7 +227,7 @@ const Projects = () => {
   const regularProjects = projects.filter(p => !p.featured);
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-6 py-20">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-6 py-20">
       <div className="max-w-7xl mx-auto">
         {/* Header with animated elements */}
         <div className="text-center mb-20 relative">
@@ -284,7 +284,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

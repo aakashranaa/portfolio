@@ -13,7 +13,7 @@
 //   ];
 
 //   return (
-//     <section className="py-20 bg-gray-50">
+//     <div className="py-20 bg-gray-50">
 //       <motion.div
 //         initial={{ opacity: 0 }}
 //         whileInView={{ opacity: 1 }}
@@ -58,7 +58,7 @@
 //           ))}
 //         </div>
 //       </motion.div>
-//     </section>
+//     </div>
 //   );
 // };
 
